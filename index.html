@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Nick's To-Do List</title>  
+  <link href = "style.css" type = "text/css" rel = "stylesheet"/>
+</head>
+
+<body>
+
+  <header>
+      <h1>Welcome, Nick! Today's date is <span id = "datetime"></span></h1>
+  </header>
+
+  <div id ="table">
+
+    <table>
+
+        <tr class = "headings">
+            <th>Task</th>
+            <th>Description</th>
+            <th>Complete?</th>
+        </tr>
+
+        <tr class = "new_input"> 
+            <td id = "task">
+                <form><input type = "text"><input type = "submit" style = "display: none"></form>
+                
+            </td>
+            <td class = "description">
+                <form><input type = "text"><input type = "submit" style = "display: none"></form>   
+            </td>
+            <td class = "button">
+                <button id = "checkmark" class = "complete" type = "button" name = "complete"><img class = "check" src = "https://image.flaticon.com/icons/svg/1009/1009256.svg"></button>
+            </td>
+        </tr>
+
+
+    </table>
+
+  </div>
+
+<footer>
+    <span id = "remaining"></span>
+</footer>
+
+
+
+
+
+  <script src = "script.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
