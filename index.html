@@ -2,14 +2,22 @@
 <html>
 
 <head>
-  <title>Nick's To-Do List</title>  
+  <title>Nick's To-Do List</title> 
+  <!-- PT Sans Font Embed --> 
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+
   <link href = "style.css" type = "text/css" rel = "stylesheet"/>
 </head>
 
 <body>
 
   <header>
-      <h1>Welcome, Nick! Today's date is <span id = "datetime"></span></h1>
+      <input type = "text" placeholder = "What do you need to do today?">
+      <button>
+        <img src = "https://icon-library.net/images/task-list-icon/task-list-icon-11.jpg">   
+      </button>
   </header>
 
   <div id ="table">
@@ -24,11 +32,10 @@
 
         <tr class = "new_input"> 
             <td id = "task">
-                <form><input type = "text"><input type = "submit" style = "display: none"></form>
                 
             </td>
             <td class = "description">
-                <form><input type = "text"><input type = "submit" style = "display: none"></form>   
+                <form><input type = "text" placeholder="Write a brief description of what needs to be done."><input type = "submit" style = "display: none"></form>   
             </td>
             <td class = "button">
                 <button id = "checkmark" class = "complete" type = "button" name = "complete"><img class = "check" src = "https://image.flaticon.com/icons/svg/1009/1009256.svg"></button>
@@ -41,6 +48,7 @@
   </div>
 
 <footer>
+    <h1 class = "greeting">Welcome, Nick! Today's date is <span id = "datetime"></span></h1>
     <span id = "remaining"></span>
 </footer>
 
