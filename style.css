@@ -73,13 +73,17 @@ header button img {
 table {
     width: 100%;
     margin: 0 auto;
-    
+    table-layout: fixed;
 }
 
 #table th, td {
     border: 1px solid black;
     text-align: center;
 } 
+
+td {
+    width: 25%;
+}
 
 input {
     width: 90%;
@@ -103,4 +107,23 @@ input ::placeholder {
 .check {
     width:180px;
     height:30px;
+}
+
+/* Footer Styling */
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #61e5ff;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#remaining {
+    font-size: 20px;
 }
