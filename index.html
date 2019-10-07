@@ -16,8 +16,8 @@
   <!-- Header Input -->
 
   <header>
-      <input type = "text" placeholder = "What do you need to do today?">
-      <button>
+      <input id = "item" type = "text" placeholder = "What do you need to do today?">
+      <button id = "add">
         <img src = "https://icon-library.net/images/task-list-icon/task-list-icon-11.jpg">   
       </button>
   </header>
@@ -25,30 +25,19 @@
 
   <!-- To-Do List -->
 
-  <div id ="table">
-
-    <table>
-
-        <tr class = "headings">
-            <th>Task</th>
-            <th>Description</th>
-            <th>Complete?</th>
-        </tr>
-
-        <tr class = "new_input"> 
-            <td id = "task">
-                
-            </td>
-            <td class = "description">
-                <form><input type = "text" placeholder="Write a brief description of what needs to be done."><input type = "submit" style = "display: none"></form>   
-            </td>
-            <td class = "button">
-                <button id = "checkmark" class = "complete" type = "button" name = "complete"><img class = "check" src = "https://image.flaticon.com/icons/svg/1009/1009256.svg"></button>
-            </td>
-        </tr>
+  <div>
+    <ul id = "todo">
+      <li>Hey, Buddy. I'm a sample list item for you to style.</li>
 
 
-    </table>
+
+
+
+
+    </ul>
+
+
+
 
   </div>
 
