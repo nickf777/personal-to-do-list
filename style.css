@@ -1,7 +1,8 @@
 /*Header Styling*/
 
 * {
-    font-family: 'PT Sans', sans-serif
+    font-family: 'PT Sans', sans-serif; 
+
 }
 
 
@@ -68,14 +69,30 @@ header button img {
 
 /*Todo Styling*/
 
+.container {
+    margin: 0 auto;
+}
+
 ul {
     padding-top: 90px;
-    overflow: scroll;
 }
 
 li {
     list-style-type: none;
-    width: 80%;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: solid 1px black;
+    background-color: #61e5ff;
+    color: white;
+}
+
+#complete_list li{
+    list-style-type: none;
+    width: 90%;
     margin: 0 auto;
     margin-top: 10px;
     padding: 10px 10px 10px 10px;
@@ -83,9 +100,32 @@ li {
     border: solid 1px black;
     background-color: #61e5ff;
     color: white;
+    text-decoration: line-through;
+    opacity: 0.5;
 
-    
 }
+
+ul button.done {
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    border-radius: 25px;
+    background: #fff;
+    cursor: pointer;
+    position: static;  
+    margin-left: 1000px;
+
+}
+
+
+ul button.done img.completeimage {
+    width: 25px;
+    height: 25px;
+    padding-top: 5px;
+    content: url("https://icon-library.net/images/check-mark-icon/check-mark-icon-2.jpg");
+}
+
+
 
 /* Footer Styling */
 
