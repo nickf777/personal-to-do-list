@@ -73,8 +73,14 @@ header button img {
     margin: 0 auto;
 }
 
+h2.todo_heading {
+    padding-top:90px;
+    margin-bottom: 10px;
+}
+
 ul {
-    padding-top: 90px;
+    margin-top: 0px;
+    padding-left: 0px;
 }
 
 li {
