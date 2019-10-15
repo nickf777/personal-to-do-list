@@ -13,10 +13,13 @@ document.getElementById("add").addEventListener("click", function() {
     let value = document.getElementById("item").value;  
     if (value) {
       addItemTodo(value);
+      remaining++;
+      document.getElementById("remaining").innerHTML = `You have ${remaining} things left on your list! Get to work :)`;
     } else {
       alert("What do you have to do today?")
     }
     document.getElementById("item").value = "";
+    
 })
 
 function addItemTodo(text) {
@@ -39,7 +42,6 @@ function addItemTodo(text) {
   completeButtonImage.classList.add("completeimage")
   completeButton.appendChild(completeButtonImage);
 
-  remaining++;
 }
 
 //Completing a Task
@@ -50,6 +52,9 @@ function moveToComplete() {
 
   parent.removeChild(item);
   completeList.appendChild(item);
+
+  remaining--;
+  document.getElementById("remaining").innerHTML = `You have ${remaining} things left on your list! Get to work :)`
 }
 
 
